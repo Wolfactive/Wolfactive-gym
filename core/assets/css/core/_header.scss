@@ -1,0 +1,27 @@
+.logo__contain , .menu__contain{
+  align-self: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-item a {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.main--background {
+    width: 100%;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+}
+.color--background{
+  background-color: #333;
+
+}
+.scrolling{
+  background-color: #333;
+  position: fixed;
+  top:0;
+}
