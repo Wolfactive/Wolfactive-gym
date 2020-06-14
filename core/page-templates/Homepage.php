@@ -18,6 +18,7 @@
  <?php get_template_part('/sections/gallary-slider') ?>
  <?php get_template_part('/sections/gym-class') ?>
  <?php get_template_part('/sections/instructor') ?>
+ <?php get_template_part('/sections/slider2') ?>
  <?php get_template_part('/sections/blogs') ?>
  <?php
  get_footer();

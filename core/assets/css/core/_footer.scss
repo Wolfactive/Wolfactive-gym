@@ -5,6 +5,10 @@
         color:#000;
         font-weight: bold;
       }
+      a:hover{
+        color:var(--primary-color);
+        transition: all .25s linear;
+      }
     }
   }
 }

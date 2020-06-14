@@ -4,13 +4,20 @@
 .menu {
     display: flex;
     justify-content: space-around;
+    .menu-item {
+      a{
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+      a:hover{
+        color:var(--primary-color);
+        transition: all .25s linear;
+      }
+    }
 }
-.menu-item a {
-    font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
+
 .main--background {
     width: 100%;
     z-index: 1000;
