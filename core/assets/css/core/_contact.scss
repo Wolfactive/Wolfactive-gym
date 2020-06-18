@@ -1,0 +1,23 @@
+.contact{
+  .contact__contain{
+    .input__infomation{
+      .input__field--contain{
+        .input__field-item{
+          display: grid;
+          label{
+            font-family: Ruda;
+            font-size:24px;
+            font-weight: 700;
+          }
+          textarea{
+            height:240px;
+            border:1px solid #dedede;
+          }
+          input{
+            border:1px solid #dedede;
+          }
+        }
+      }
+    }
+  }
+}

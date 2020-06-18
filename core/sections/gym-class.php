@@ -8,7 +8,6 @@
         <?php
          $args = array(
            'post_type' => 'post',
-           'category_name' => 'class',
            'posts_per_page' => 4,
         );
         $the_query= new WP_Query($args);

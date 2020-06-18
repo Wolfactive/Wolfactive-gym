@@ -132,7 +132,7 @@ img {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -149,6 +149,8 @@ img {
   background: transparent;
   outline-color: transparent;
   transition: all 0.5s;
+  color: #fff;
+  background: var(--primary-color);
 }
 
 .newspaper__more-btn:hover {
@@ -1032,6 +1034,25 @@ section.class-gym {
   align-self: center;
   font-weight: 700;
   margin-left: 10px;
+}
+
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item {
+  display: grid;
+}
+
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item label {
+  font-family: Ruda;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item textarea {
+  height: 240px;
+  border: 1px solid #dedede;
+}
+
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item input {
+  border: 1px solid #dedede;
 }
 
 /*# sourceMappingURL=globals.css.map */

@@ -115,7 +115,7 @@ img{
 
 .btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 700;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -132,6 +132,8 @@ img{
 		background:transparent;
 		outline-color: transparent;
     transition: all 0.5s;
+		color: #fff;
+		background:var(--primary-color);
 }
 .newspaper__more-btn:hover {
   color: #fff !important;

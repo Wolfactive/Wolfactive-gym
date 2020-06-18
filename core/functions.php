@@ -40,24 +40,24 @@ add_theme_support( 'custom-logo', array(
   	'flex-width'  => true,
   	'header-text' => array( 'site-title', 'site-description' ),
   ) );
-  function house_product(){
+  function fitness_class(){
       $label = array(
-          'name' => 'Dự Án',
-          'singular_name' => 'Dự Án' ,
-  		    'add_new'               => __( 'Thêm dự án', 'textdomain' ),
-          'add_new_item'          => __( 'Tên dự án', 'textdomain' ),
-          'new_item'              => __( 'Dự án mới', 'textdomain' ),
-          'edit_item'             => __( 'Chỉnh sửa dự án', 'textdomain' ),
-          'view_item'             => __( 'Xem dự án', 'textdomain' ),
-          'all_items'             => __( 'Tất cả dự án', 'textdomain' ),
-          'search_items'          => __( 'Tìm kiếm dự án', 'textdomain' ),
-  		    'featured_image'        => _x( 'Hình ảnh dự án', 'textdomain' ),
-          'set_featured_image'    => _x( 'Chọn hình ảnh dự án', 'textdomain' ),
-          'remove_featured_image' => _x( 'Xóa hình ảnh dự án', 'textdomain' ),
+          'name' => 'Lớp tập',
+          'singular_name' => 'Lớp tập' ,
+  		    'add_new'               => __( 'Thêm lớp tập', 'textdomain' ),
+          'add_new_item'          => __( 'Tên lớp tập', 'textdomain' ),
+          'new_item'              => __( 'lớp tập mới', 'textdomain' ),
+          'edit_item'             => __( 'Chỉnh sửa lớp tập', 'textdomain' ),
+          'view_item'             => __( 'Xem lớp tập', 'textdomain' ),
+          'all_items'             => __( 'Tất cả lớp tập', 'textdomain' ),
+          'search_items'          => __( 'Tìm kiếm lớp tập', 'textdomain' ),
+  		    'featured_image'        => _x( 'Hình ảnh lớp tập', 'textdomain' ),
+          'set_featured_image'    => _x( 'Chọn hình ảnh lớp tập', 'textdomain' ),
+          'remove_featured_image' => _x( 'Xóa hình ảnh lớp tập', 'textdomain' ),
       );
       $args = array(
           'labels' => $label,
-          'description' => 'Phần dự án',
+          'description' => 'Phần lớp tập',
           'supports' => array(
               'title',
               'thumbnail',
@@ -77,19 +77,19 @@ add_theme_support( 'custom-logo', array(
           'show_in_graphql' => true,
           'rest_base'          => 'blogs',
           'menu_position' => 5,
-          'menu_icon'           => 'dashicons-book-alt',
+          'menu_icon'           => 'dashicons-universal-access-alt',
           'can_export' => true,
           'has_archive' => true,
           'publicly_queryable' => true,
           'capability_type' => 'post',
-          'graphql_single_name' => 'House_product',
-          'graphql_plural_name' => 'House_products',
+          'graphql_single_name' => 'Fitness_class',
+          'graphql_plural_name' => 'Fitness_classs',
       );
 
-      register_post_type('house_product', $args);
+      register_post_type('fitness_class', $args);
 
   }
-  add_action('init', 'house_product');
+  add_action('init', 'fitness_class');
 
 function make_taxonomy_theme() {
   $labels = array(
@@ -111,7 +111,7 @@ function make_taxonomy_theme() {
         'graphql_single_name'        => 'Theloai',
         'graphql_plural_name'        => 'Theloais',
         );
-    register_taxonomy('the-loai', 'house_product', $args);
+    register_taxonomy('the-loai', 'fitness_class', $args);
   }
   add_action( 'init', 'make_taxonomy_theme', 0 );
   //marcus post views
