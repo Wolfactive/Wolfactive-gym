@@ -30,13 +30,13 @@
 	  <div class="footer__sub">
 	    <div class="container">
         <div class="row-divide footer__sub-container">
-          <div class="col-divide-6">
+          <div class="col-divide-6 col-divide-md-12">
             <?php
              wp_nav_menu(array(
             'theme_location' => 'footerMenuLocation' ));
             ?>
           </div>
-          <div class="copyright--content col-divide-6">
+          <div class="copyright--content col-divide-6 col-divide-md-12">
             <p class="copyright text--upcase text--center">All Right Reserved.</p></div>
           </div>
         </div>

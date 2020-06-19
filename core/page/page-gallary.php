@@ -7,6 +7,9 @@ get_template_part('sections/breadcum');
 ?>
 <div class="gallery">
   <div class="gallery__container container">
+    <div class="gallery__title pd-50 text--center">
+      <h1 class="title"><?php the_title(); ?></h1>
+    </div>
     <?php $images = get_field('gallery_image');
     if( $images ): ?>
         <ul class="gallery__wrapper">

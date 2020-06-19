@@ -20,56 +20,45 @@
 <section class="header">
   <!-- nếu là homepage thì scroll đổi màu -->
   <?php if(is_front_page()){ ?>
-  <div class="main--background position--fixed">
-    <div class="header__menu-wrapper">
-      <div class="bg-menu-header"></div>
-      <div class="header__contain container">
+  <div class="header__container main--background position--fixed">
+    <div class="header__menu-wrapper container">
         <div class="row-divide header__background">
-          <div class="header__item col-divide-4 logo__contain">
+          <div class="header__item col-divide-4 col-divide-sm-12 logo__contain">
      	      <a href="<?php echo site_url(); ?>" class="d--block logo mr-auto">
      	        <img src="<?php echo get_field('logo','option');//$image[0]; ?>" alt="gym-fitness">
      	      </a>
      	   </div>
-         <div class="header__item col-divide-8 menu__contain">
+         <div class="header__item col-divide-8 col-divide-sm-12 menu__contain">
     	      <?php
     	       wp_nav_menu(array(
     		    'theme_location' => 'headerMenuLocation' ));
     	      ?>
     	   </div>
         </div>
-    	   <div class="header__item d--none dp--block">
-    	      <button class="btn text--light" id="navBtn" aria-label="btn-navbar">
-    	          <i class="fas fa-bars icon--text"></i>
-    	      </button>
-    	   </div>
-    	</div>
     </div>
   </div>
 <?php } else{ ?>
-  <div class="main--background color--background">
-    <div class="header__menu-wrapper">
-      <div class="bg-menu-header"></div>
-      <div class="header__contain container">
+  <div class="header__container main--background color--background">
+    <div class="header__menu-wrapper container">
         <div class="row-divide header__background">
-          <div class="header__item col-divide-4 logo__contain">
+          <div class="header__item col-divide-4 col-divide-sm-12 logo__contain">
      	      <a href="<?php echo site_url(); ?>" class="d--block logo mr-auto">
      	        <img src="<?php echo get_field('logo','option');//$image[0]; ?>" alt="gym-fitness">
      	      </a>
      	   </div>
-         <div class="header__item col-divide-8 menu__contain">
+         <div class="header__item col-divide-8 col-divide-sm-12 menu__contain">
     	      <?php
     	       wp_nav_menu(array(
     		    'theme_location' => 'headerMenuLocation' ));
     	      ?>
     	   </div>
         </div>
-    	   <div class="header__item d--none dp--block">
+    </div>
+    	   <!-- <div class="header__item d--none dp--block">
     	      <button class="btn text--light" id="navBtn" aria-label="btn-navbar">
     	          <i class="fas fa-bars icon--text"></i>
     	      </button>
-    	   </div>
-    	</div>
-    </div>
+    	   </div> -->
   </div>
 <?php } ?>
 </section>

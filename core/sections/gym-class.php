@@ -8,6 +8,7 @@
         <?php
          $args = array(
            'post_type' => 'post',
+           'category_name' => 'Class',
            'posts_per_page' => 4,
         );
         $the_query= new WP_Query($args);
@@ -15,7 +16,7 @@
            <li class="class__item">
              <div class="class__item-contain">
                <div class="class__image">
-                 <?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?>
+                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
                </div>
                <div class="class__title-and-time">
                  <h3 class="class__name text--upcase"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>

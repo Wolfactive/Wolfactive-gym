@@ -1,21 +1,38 @@
 .logo__contain , .menu__contain{
   align-self: center;
 }
+.header__item{
+  a{
+    text-align: center;
+    img{
+      @media(max-width:768px){
+        width:75px;
+      }
+    }
+  }
+}
 .menu {
     display: flex;
     justify-content: space-around;
+    @media (max-width: 768px){
+      padding-bottom: 5px;
+    }
     .menu-item {
       a{
         font-size: 18px;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1.5px;
+        @media (max-width: 768px){
+          font-size: 14px;
+        }
       }
       a:hover{
         color:var(--primary-color);
         transition: all .25s linear;
       }
     }
+
 }
 
 .main--background {

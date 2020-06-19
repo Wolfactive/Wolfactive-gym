@@ -24,7 +24,7 @@ get_header();
            <li class="blog__item">
              <div class="blog__item-contain">
                <div class="blog__image">
-                 <?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?>
+                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a> 
                </div>
                  <div class="blog__tags">
                    <?php

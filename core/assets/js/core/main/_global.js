@@ -12,6 +12,7 @@ $(document).ready(function(){
   slidesToShow: 4,
   slidesToScroll: 4,
   autoplay: true,
+
   autoplaySpeed: 3000,
   responsive: [
     {
@@ -45,15 +46,16 @@ $(document).ready(function(){
   $('.single-item').slick({
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows:false,
   });
 })
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 50) {
-        $(".main--background").addClass("scrolling");
+        $(".header__container").addClass("scrolling");
     } else {
-        $(".main--background").removeClass("scrolling");
+        $(".header__container").removeClass("scrolling");
 
     }
 });
