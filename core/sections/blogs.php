@@ -19,7 +19,7 @@
            <li class="blog__item">
              <div class="blog__item-contain">
                <div class="blog__image">
-                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a> 
+                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
                </div>
                  <div class="blog__tags">
                    <?php
@@ -30,6 +30,7 @@
                      }
                    } ?>
                  </div>
+                 <div class="bg-cover-color"></div>
                  <div class="blog__info">
                    <h3 class="blog__name text--upcase"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
                    <div class="blog__author-date">

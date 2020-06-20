@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "gzipper": "^3.7.0",
+    "lightgallery.js": "^1.2.0",
     "uglify-merge-js": "0.0.7"
   }
 }

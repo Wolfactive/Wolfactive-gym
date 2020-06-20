@@ -1,9 +1,12 @@
 jQuery(document).ready(function() {
-  gandul();
   jQuery('#navBtn').click(function(){
     jQuery('#headerNavBar').toggleClass('active');
   });
 })
+lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    })
 /*Slick*/
 $(document).ready(function(){
   $('.responsive').slick({
@@ -60,13 +63,13 @@ $(window).scroll(function() {
     }
 });
 
-var menuContain = document.getElementById('menu-main-menu');
-var menuItem = menuContain.getElementByClassName('menu-item');
-
-for (var i = 0; i < menuItem.length; i++) {
-  menuItem[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+// var menuContain = document.getElementById('menu-main-menu');
+// var menuItem = menuContain.getElementByClassName('menu-item');
+//
+// for (var i = 0; i < menuItem.length; i++) {
+//   menuItem[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
