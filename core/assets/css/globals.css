@@ -1075,9 +1075,9 @@ form.search-form button.search-submit {
   border: none;
   position: absolute;
   right: 0;
+  top: 0;
   padding: 6px;
   border-radius: 5px;
-  top: 1px;
 }
 
 .slider-2 .slider__container {
