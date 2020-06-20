@@ -12,3 +12,25 @@
     }
   }
 }
+form.search-form {
+    position: relative;
+      input.search-field {
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+      }
+      input.search-field::placeholder{
+        color:var(--primary-color);
+      }
+      button.search-submit {
+        background: var(--primary-color);
+        color: #fff;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 6px;
+        border-radius: 5px;
+      }
+}

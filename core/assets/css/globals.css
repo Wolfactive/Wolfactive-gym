@@ -1054,6 +1054,32 @@ section.class-gym {
   font-size: 18px;
 }
 
+form.search-form {
+  position: relative;
+}
+
+form.search-form input.search-field {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+form.search-form input.search-field::placeholder {
+  color: var(--primary-color);
+}
+
+form.search-form button.search-submit {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  position: absolute;
+  right: 0;
+  padding: 6px;
+  border-radius: 5px;
+  top: 1px;
+}
+
 .slider-2 .slider__container {
   height: 480px;
 }
