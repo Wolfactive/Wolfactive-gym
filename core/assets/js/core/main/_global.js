@@ -47,8 +47,8 @@ $(document).ready(function(){
   ]
 });
   $('.single-item').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
     arrows:false,
   });
 })
@@ -62,6 +62,7 @@ $(window).scroll(function() {
 
     }
 });
+window.onload = function(){ AOS.init();};
 
 // var menuContain = document.getElementById('menu-main-menu');
 // var menuItem = menuContain.getElementByClassName('menu-item');

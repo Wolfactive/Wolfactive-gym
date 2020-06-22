@@ -14,7 +14,8 @@
         $the_query= new WP_Query($args);
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="class__item">
-             <div class="class__item-contain">
+             <div class="class__item-contain" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
                <div class="class__image">
                  <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
                </div>
