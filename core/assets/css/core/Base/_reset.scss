@@ -61,6 +61,7 @@ html{
 	overflow-x: hidden;
 }
 body{
+	overflow: hidden;
 	font-size:15px;
 	font-weight:500;
 	line-height:1.5;
@@ -687,19 +688,6 @@ width: 80%;
     }
 	/*Setup*/
 }
-/*Slider CSS*/
-.slider__item{
-	position: relative;
-}
-.slide__bg {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-	opacity: 0.5;
-	background-color: #333;
-}
-/*Fin Slider Css*/
 /*Css display Welcome Contain*/
 /*CSS section Our Class*/
 .class__background, .instructor__background, .blog__background{
@@ -746,6 +734,7 @@ width: 80%;
 			position: absolute;
 			width:100%;
 			top:0;
+			z-index: 1;
 			padding-left: 20px;
 			padding-top: 20px;
 			.tags-item {
@@ -768,6 +757,7 @@ width: 80%;
 			width:100%;
 			background: linear-gradient(0deg, rgba(0,0,0,0.5) 10%, rgba(255,255,255,0) 100%);
 			bottom:0;
+			transition: all .25s cubic-bezier(0.4, 0, 1, 1);
 			padding: 0px 20px 20px 20px;
 			@media(max-width:768px){
 				bottom:8px;
@@ -784,6 +774,11 @@ width: 80%;
 				}
 			}
 		}
+}
+.blog__item-contain:hover{
+	.blog__info{
+		padding-bottom:40px;
+	}
 }
 .by-date{
 	color:var(--primary-bg-color);

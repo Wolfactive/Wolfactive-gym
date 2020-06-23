@@ -1,20 +1,36 @@
-<section class="blog">
-  <div class="blog container">
-    <div class="title__instuctor pd-50 text--center">
-      <h1 class="text--upcase">Our blog</h1>
-      <div class="content__welcome text--center">
-        <p>Professional blogs that will help you archive your goals</p>
-      </div>
+<section class="class-gym">
+  <div class="our__class container">
+    <div class="title__class text--upcase pd-50 text--center">
+      <h1>Our Class</h1>
     </div>
-    <div class="blog__container">
-      <ul class="blog__background">
+    <div class="class__container">
+      <ul class="class__background">
         <?php
+         $getValueSelectCategory = get_field('hien_thi_blog_3','option');
          $args = array(
            'post_type' => 'post',
-           'category_name' => 'blog',
+           'cat' => $getValueSelectCategory,
            'posts_per_page' => 4,
         );
         $the_query= new WP_Query($args);
+        if($getValueSelectCategory === get_cat_ID('Class')){
+        while($the_query->have_posts()) : $the_query->the_post(); ?>
+           <li class="class__item">
+             <div class="class__item-contain" data-aos="flip-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+               <div class="class__image">
+                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
+               </div>
+               <div class="class__title-and-time">
+                 <h3 class="class__name text--upcase"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+                 <p class="class__time"><?php echo get_field('time_open_class') ?></p>
+               </div>
+             </div>
+           </li>
+        <?php
+        endwhile;
+      }
+      else{
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="blog__item">
              <div class="blog__item-contain">
@@ -46,8 +62,15 @@
            </li>
         <?php
         endwhile;
+      }
+        $cat_id = get_cat_ID($getValueSelectCategory);
          ?>
       </ul>
+    </div>
+    <div class="class__all pd-50">
+      <div class="show-class-all text--upcase">
+        <a class="link-all-class" href="<?php echo get_category_link($cat_id); ?>">Đọc Thêm</a>
+      </div>
     </div>
   </div>
 </section>

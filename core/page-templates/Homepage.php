@@ -16,10 +16,10 @@
    </div>
  </section>
  <?php get_template_part('/sections/gallary-slider') ?>
- <?php get_template_part('/sections/gym-class') ?>
- <?php get_template_part('/sections/instructor') ?>
+ <?php get_template_part('/sections/blog-homepage-1') ?>
+ <?php get_template_part('/sections/blog-homepage-2') ?>
  <?php get_template_part('/sections/slider2') ?>
- <?php get_template_part('/sections/blogs') ?>
+ <?php get_template_part('/sections/blog-homepage-3') ?>
  <?php
  get_footer();
 ?>
