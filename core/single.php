@@ -2,7 +2,7 @@
  get_header();
 ?>
  <section class="wrapper" id="singlePost">
-   <div class="container myt-20">
+   <div class="container myt-50">
      <div class="row-divide">
        <div class="col-divide-9 col-divide-sm-12">
          <div class="post__contain">

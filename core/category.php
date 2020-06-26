@@ -9,13 +9,23 @@
          </div>
        <ul class="category__contain">
          <?php
-          while (have_posts()) : the_post(); ?>
+         $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+         $current_cat_ID = get_query_var('cat');
+         $args = array(
+            'post_type' => 'post',
+            'orderby' => 'DESC',
+            'cat'=>$current_cat_ID,
+            'posts_per_page'=>6,
+            'paged'=>$paged,
+             );
+         $the_query = new WP_Query($args);
+          while ($the_query->have_posts()) : $the_query->the_post(); ?>
               <li class="category__post-item">
                 <div class="category__item-container position--relative">
                   <div class="category__item-image">
                     <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
                   </div>
-                  <div class="bg-cover-color"></div>
+                  <a href="<?php echo get_permalink(); ?>"><div class="bg-cover-color"></div></a>
                   <div class="category__item-tag--post">
                     <?php
                     $tags = get_the_tags();
@@ -40,7 +50,7 @@
            <?php endwhile;  ?>
        </ul>
     <div class="Category__pagination">
-      <?php the_posts_pagination()  ?>
+      <?php pagination_bar($the_query)  ?>
     </div>
      </div>
     <?php

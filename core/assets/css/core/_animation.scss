@@ -131,9 +131,13 @@
   width: 0;
   position: absolute;
   top:0;
+  cursor: pointer;
 }
 
-.blog__item-contain:hover{
+.blog__item-contain:hover, .class__item-contain:hover{
+  .blog__info , .class__title-and-time{
+		padding-bottom:40px;
+	}
   .blog__image{
     img{
       -webkit-animation: kenburns-bottom 5s ease-out both;

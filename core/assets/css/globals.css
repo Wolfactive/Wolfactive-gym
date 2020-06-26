@@ -305,6 +305,10 @@ img {
   padding-top: 150px;
 }
 
+.pdt-50 {
+  padding-top: 50px;
+}
+
 .rotate--90 {
   transform: rotate(90deg);
 }
@@ -810,8 +814,9 @@ a:hover {
   bottom: 0;
   width: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 100%);
-  height: 25%;
+  padding-bottom: 20px;
   padding-left: 20px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
 @media (max-width: 768px) {
@@ -947,6 +952,10 @@ section.class-gym {
 .content {
   font-family: ruda;
   font-size: 18px;
+}
+
+.title__blog-home {
+  background: #fff;
 }
 
 .logo__contain, .menu__contain {
@@ -1200,8 +1209,12 @@ form.search-form button.search-submit {
   border: 1px solid #dedede;
 }
 
-.contact .contact__contain .input__infomation .input__field--contain .input__field-item input {
-  border: 1px solid #dedede;
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item input.contact__input-field {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #eee;
+  padding: 6px;
+  border-radius: 5px;
 }
 
 .gallery__wrapper {
@@ -1363,14 +1376,19 @@ form.search-form button.search-submit {
   width: 0;
   position: absolute;
   top: 0;
+  cursor: pointer;
 }
 
-.blog__item-contain:hover .blog__image img {
+.blog__item-contain:hover .blog__info, .blog__item-contain:hover .class__title-and-time, .class__item-contain:hover .blog__info, .class__item-contain:hover .class__title-and-time {
+  padding-bottom: 40px;
+}
+
+.blog__item-contain:hover .blog__image img, .class__item-contain:hover .blog__image img {
   -webkit-animation: kenburns-bottom 5s ease-out both;
   animation: kenburns-bottom 5s ease-out both;
 }
 
-.blog__item-contain:hover .bg-cover-color {
+.blog__item-contain:hover .bg-cover-color, .class__item-contain:hover .bg-cover-color {
   width: 100%;
   height: 100%;
 }
@@ -1398,23 +1416,21 @@ form.search-form button.search-submit {
 }
 
 .category__contain .category__post-item:hover .category__item-container .bg-cover-color {
-  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .category__contain .category__post-item:hover .category__item-container .category__item-content {
   padding: 0 20px 40px 20px;
 }
 
+.category__contain .category__item-container .category__item-image {
+  max-height: 360px;
+  overflow: hidden;
+}
+
 .category__contain .category__item-container .bg-cover-color {
-  position: absolute;
-  top: -6px;
-  background-color: #000;
-  opacity: 0.5;
   z-index: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .category__contain .category__item-container .category__item-tag--post {
@@ -1442,13 +1458,32 @@ form.search-form button.search-submit {
   position: absolute;
   width: 100%;
   padding: 0 20px 20px 20px;
-  bottom: 6px;
+  bottom: 0;
   transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 100%);
 }
 
 .category__contain .category__item-container .category__item-content .category__post-name a {
   color: #fff;
+}
+
+.Category__pagination {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.Category__pagination .page-numbers {
+  padding: 5px 10px;
+  background: var(--primary-color);
+  color: #fff;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.Category__pagination .current {
+  background: #fff;
+  color: #000;
+  border: 1px solid var(--primary-color);
 }
 
 .breadcumb__title {

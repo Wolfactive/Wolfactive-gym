@@ -14,7 +14,8 @@
   .category__post-item:hover{
     .category__item-container{
       .bg-cover-color{
-        display: block;
+        width:100%;
+        height:100%;
       }
       .category__item-content{
         padding:0 20px 40px 20px;
@@ -22,16 +23,12 @@
     }
   }
   .category__item-container{
+    .category__item-image{
+      max-height: 360px;
+      overflow: hidden;
+    }
     .bg-cover-color{
-      position: absolute;
-      top:-6px;
-      background-color: #000;
-      opacity: 0.5;
       z-index: 0;
-      width: 100%;
-      height:100%;
-      display: none;
-      transition: all .25s cubic-bezier(0.4, 0, 1, 1);
     }
     .category__item-tag--post{
       position: absolute;
@@ -55,7 +52,7 @@
       position: absolute;
       width:100%;
       padding:0 20px 20px 20px;
-      bottom: 6px;
+      bottom: 0;
       transition: all .25s cubic-bezier(.4,0,1,1);
       background: linear-gradient(0deg,rgba(0,0,0,.5) 10%,rgba(255,255,255,0) 100%);
       .category__post-name{
@@ -65,4 +62,20 @@
       }
     }
   }
+}
+.Category__pagination {
+    margin-top: 50px;
+    text-align: center;
+    .page-numbers {
+        padding: 5px 10px;
+        background: var(--primary-color);
+        color: #fff;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .current {
+    background: #fff;
+    color: #000;
+    border: 1px solid var(--primary-color);
+    }
 }

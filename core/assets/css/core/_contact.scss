@@ -13,8 +13,12 @@
             height:240px;
             border:1px solid #dedede;
           }
-          input{
-            border:1px solid #dedede;
+          input.contact__input-field{
+            outline: none;
+            border: 1px solid transparent;
+            background-color:#eee;
+            padding: 6px;
+            border-radius: 5px;
           }
         }
       }

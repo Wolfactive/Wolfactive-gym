@@ -270,6 +270,9 @@ img{
 .pdt-150{
 	padding-top:150px;
 }
+.pdt-50{
+	padding-top:50px;
+}
 .rotate--90{
 	transform: rotate(90deg);
 }
@@ -707,8 +710,9 @@ width: 80%;
 		    bottom: 0;
 		    width: 100%;
 		    background: linear-gradient(0deg, rgba(0,0,0,0.5) 10%, rgba(255,255,255,0) 100%);
-		    height: 25%;
+		    padding-bottom:20px;
 				padding-left: 20px;
+				transition: all .25s cubic-bezier(0.4, 0, 1, 1);
 				@media(max-width: 768px){
 					height: 40%;
 					bottom: 8px;
@@ -812,4 +816,7 @@ section.class-gym{
 .content{
 	font-family: ruda;
 	font-size:18px;
+}
+.title__blog-home{
+	background:#fff;
 }

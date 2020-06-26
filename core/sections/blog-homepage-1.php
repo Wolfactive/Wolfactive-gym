@@ -1,8 +1,8 @@
 <section class="class-gym">
-  <div class="our__class container">
-    <div class="title__class text--upcase pd-50 text--center">
-      <h1>Our Class</h1>
-    </div>
+  <div class="title__blog-home text--upcase pd-50 text--center">
+    <h1><?php the_field('label_blog','option') ?></h1>
+  </div>
+  <div class="our__class container pdt-50">
     <div class="class__container">
       <ul class="class__background">
         <?php
