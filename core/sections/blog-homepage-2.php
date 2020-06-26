@@ -66,7 +66,7 @@
         <?php
         endwhile;
       }
-        $cat_id = get_cat_ID($getValueSelectCategory);
+        $cat_id = $getValueSelectCategory;
          ?>
       </ul>
     </div>

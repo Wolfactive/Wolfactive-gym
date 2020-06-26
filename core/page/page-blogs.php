@@ -7,10 +7,7 @@ get_header();
 <section class="blog">
   <div class="blog container">
     <div class="title__instuctor pd-50 text--center">
-      <!-- <h1 class="text--upcase">Our blog</h1>
-      <div class="content__welcome text--center">
-        <p>Professional blogs that will help you archive your goals</p>
-      </div> -->
+      <h1 class="text--upcase"><?php the_title(); ?></h1>
     </div>
     <div class="blog__container myt-50">
       <ul class="blog__background">
@@ -24,7 +21,7 @@ get_header();
            <li class="blog__item">
              <div class="blog__item-contain">
                <div class="blog__image">
-                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a> 
+                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
                </div>
                  <div class="blog__tags">
                    <?php

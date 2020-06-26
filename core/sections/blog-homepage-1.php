@@ -42,10 +42,12 @@
                    <?php
                    $tags = get_the_tags();
                    if ($tags) {
+                     $i=0;
                      foreach( $tags as $tag ) {
-                       echo '<span class="tags-item text--upcase"><a href="'.get_permalink().'">'.$tag->name.'</a></span>';
+                       if($i===0) {echo '<span class="tags-item text--upcase"><a href="'.get_permalink().'">'.$tag->name.'</a></span>';}
+                       $i++;
                      }
-                   } ?>
+                   }  ?>
                  </div>
                  <div class="bg-cover-color"></div>
                  <div class="blog__info">
@@ -64,7 +66,7 @@
         <?php
         endwhile;
       }
-        $cat_id = get_cat_ID($getValueSelectCategory);
+        $cat_id = $getValueSelectCategory;
          ?>
       </ul>
     </div>

@@ -16,12 +16,15 @@ form.search-form {
     position: relative;
       input.search-field {
         width: 100%;
+        outline:none;
         border-radius: 5px;
         padding: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid transparent;
       }
       input.search-field::placeholder{
-        color:var(--primary-color);
+        background-color:#eee;
+        padding: 6px;
+        border-radius: 5px;
       }
       button.search-submit {
         background: var(--primary-color);

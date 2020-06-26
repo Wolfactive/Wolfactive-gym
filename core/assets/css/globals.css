@@ -1050,13 +1050,16 @@ form.search-form {
 
 form.search-form input.search-field {
   width: 100%;
+  outline: none;
   border-radius: 5px;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
 }
 
 form.search-form input.search-field::placeholder {
-  color: var(--primary-color);
+  background-color: #eee;
+  padding: 6px;
+  border-radius: 5px;
 }
 
 form.search-form button.search-submit {
@@ -1375,6 +1378,148 @@ form.search-form button.search-submit {
 .slider__item:hover .slider__image-item img {
   -webkit-animation: kenburns-bottom 5s ease-out both;
   animation: kenburns-bottom 5s ease-out both;
+}
+
+.breadcumb__title {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.category__contain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 560px));
+  grid-auto-rows: 360px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.category__contain .category__post-item {
+  overflow: hidden;
+}
+
+.category__contain .category__post-item:hover .category__item-container .bg-cover-color {
+  display: block;
+}
+
+.category__contain .category__post-item:hover .category__item-container .category__item-content {
+  padding: 0 20px 40px 20px;
+}
+
+.category__contain .category__item-container .bg-cover-color {
+  position: absolute;
+  top: -6px;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.category__contain .category__item-container .category__item-tag--post {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.category__contain .category__item-container .category__item-tag--post .tags-item {
+  padding: 10px;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  background: var(--primary-bg-color);
+}
+
+.category__contain .category__item-container .category__item-tag--post .tags-item a {
+  color: #fff;
+}
+
+.category__contain .category__item-container .category__item-content {
+  position: absolute;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  bottom: 6px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 100%);
+}
+
+.category__contain .category__item-container .category__item-content .category__post-name a {
+  color: #fff;
+}
+
+.breadcumb__title {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.search__result-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
+  grid-auto-rows: 360px;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.search__result-container .search__post-item {
+  overflow: hidden;
+}
+
+.search__result-container .search__post-item:hover .search__item-container .bg-cover-color {
+  display: block;
+}
+
+.search__result-container .search__post-item:hover .search__item-container .search__item-content {
+  padding: 0 20px 40px 20px;
+}
+
+.search__result-container .search__item-container .bg-cover-color {
+  position: absolute;
+  top: -6px;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.search__result-container .search__item-container .search__item-tag--post {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.search__result-container .search__item-container .search__item-tag--post .tags-item {
+  padding: 10px;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  background: var(--primary-bg-color);
+}
+
+.search__result-container .search__item-container .search__item-tag--post .tags-item a {
+  color: #fff;
+}
+
+.search__result-container .search__item-container .search__item-content {
+  position: absolute;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  bottom: 6px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 100%);
+}
+
+.search__result-container .search__item-container .search__item-content .search__post-name a {
+  color: #fff;
 }
 
 /*# sourceMappingURL=globals.css.map */

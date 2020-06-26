@@ -1,4 +1,4 @@
-<section class="slider myt-50 slider-2">
+<section class="slider slider-2">
   <div class="slider__container single-item ">
     <?php while (have_rows('slider_2','option')) : the_row(); ?>
       <div class="slider__item">
