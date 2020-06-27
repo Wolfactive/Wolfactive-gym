@@ -13,7 +13,7 @@
      <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\webfonts\fa-regular-400.woff2') ?>" as="font" type="font/woff2" crossorigin>
      <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\webfonts\fa-solid-900.woff2') ?>" as="font" type="font/woff2" crossorigin>
      <link rel="stylesheet" href="<?php echo get_theme_file_uri('assets/css/globals.min.css') ?>">
-     <script type='text/javascript' src="<?php echo get_theme_file_uri('assets/js/main.min.js') ?>"></script>
+     <script async type='text/javascript' src="<?php echo get_theme_file_uri('assets/js/main.min.js') ?>"></script>
      <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
