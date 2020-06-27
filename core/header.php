@@ -12,6 +12,7 @@
      <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\webfonts\fa-brands-400.woff2') ?>" as="font" type="font/woff2" crossorigin>
      <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\webfonts\fa-regular-400.woff2') ?>" as="font" type="font/woff2" crossorigin>
      <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\webfonts\fa-solid-900.woff2') ?>" as="font" type="font/woff2" crossorigin>
+     <link rel="preload" href="<?php echo get_theme_file_uri('assets\css\lib\fontawsome\slick\slick.woff') ?>" as="font" type="font/woff" crossorigin>
      <link rel="stylesheet" href="<?php echo get_theme_file_uri('assets/css/globals.min.css') ?>">
      <script async type='text/javascript' src="<?php echo get_theme_file_uri('assets/js/main.min.js') ?>"></script>
      <?php wp_head(); ?>
