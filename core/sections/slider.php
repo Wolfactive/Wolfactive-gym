@@ -3,7 +3,7 @@
     <?php while (have_rows('slider','option')) : the_row(); ?>
       <div class="slider__item">
         <div class="slider__image-item">
-          <img src="<?php echo get_sub_field('image_slider','option'); ?>">
+          <img data-src="<?php echo get_sub_field('image_slider','option'); ?>">
           <div class="slide__bg" ></div>
         </div>
       </div>

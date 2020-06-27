@@ -44,5 +44,18 @@
 	    <!----------=========Sub==========-------->
  </section>
  <?php wp_footer(); ?>
+ <script
+    async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"
+  ></script>
+  <script type="text/javascript">
+  var imgLazy = document.getElementsByTagName('img');
+  for( i=0; i < imgLazy.length; i++)
+  {
+    imgLazy[i]=imgLazy[i].classList.add("lazy");
+  }
+  window.lazyLoadOptions = {
+          elements_selector: '.lazy',
+      };
+  </script>
  </body>
 </html>
