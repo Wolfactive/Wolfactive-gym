@@ -1082,6 +1082,11 @@ form.search-form button.search-submit {
   border-radius: 5px;
 }
 
+.slider__container {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .slider__image-item {
   position: relative;
 }

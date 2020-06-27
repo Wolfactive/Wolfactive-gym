@@ -16,10 +16,9 @@
         if($getValueSelectCategory === get_cat_ID('Class')){
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="class__item">
-             <div class="class__item-contain" data-aos="flip-up" data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+             <div class="class__item-contain" data-aos="fade-left" data-aos-offset="1000" data-aos-easing="ease-in-sine">
                <div class="class__image">
-                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
+                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url(); ?>" alt="Image"></a>
                </div>
                <div class="class__title-and-time">
                  <h3 class="class__name text--upcase"><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
@@ -33,10 +32,9 @@
       else{
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="blog__item">
-             <div class="blog__item-contain" data-aos="flip-up" data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+             <div class="blog__item-contain" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                <div class="blog__image">
-                 <a href="<?php echo get_permalink(); ?>"><?php echo get_the_post_thumbnail( get_the_ID(), 'full', null );?></a>
+                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url(); ?>" alt="Image"></a>
                </div>
                  <div class="blog__tags">
                    <?php
