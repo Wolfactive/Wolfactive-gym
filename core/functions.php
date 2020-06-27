@@ -411,3 +411,12 @@ function pagination_bar($custom_query) {
         ));
     }
 }
+
+function GymandFit_features() {
+  add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
+  add_image_size('professorLandscape', 560, 360, true);
+  add_image_size('SizeForCarousel', 'full', 480, true);
+}
+
+add_action('after_setup_theme', 'GymandFit_features');
