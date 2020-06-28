@@ -1083,7 +1083,7 @@ form.search-form button.search-submit {
 }
 
 .slider__container {
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
