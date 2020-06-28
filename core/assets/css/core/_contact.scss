@@ -20,6 +20,11 @@
             padding: 6px;
             border-radius: 5px;
           }
+          .notice__result-value {
+            color: var(--primary-color);
+            font-weight: 700;
+            opacity:0;
+          }
         }
       }
     }

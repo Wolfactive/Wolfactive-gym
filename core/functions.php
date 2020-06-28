@@ -11,7 +11,8 @@ define('THEME_URL', get_stylesheet_directory_uri());
 
 $file_includes = [
     'includes/theme-setup.php',                // General theme setting
-    'includes/acf-options.php',               // ACF Option page
+    'includes/acf-options.php',  // ACF Option page
+    'includes/resize.php',
 ];
 
 foreach ($file_includes as $file) {
@@ -420,3 +421,38 @@ function GymandFit_features() {
 }
 
 add_action('after_setup_theme', 'GymandFit_features');
+//* Remove WP Embed Script
+function stop_loading_wp_embed() {
+if (!is_admin()) {
+wp_deregister_script('wp-embed');
+}
+}
+add_action('init', 'stop_loading_wp_embed');
+// Remove the REST API endpoint.
+remove_action( 'rest_api_init', 'wp_oembed_register_route' );
+
+// Turn off oEmbed auto discovery.
+add_filter( 'embed_oembed_discover', '__return_false' );
+
+// Don't filter oEmbed results.
+remove_filter( 'oembed_dataparse', 'wp_filter_oembed_result', 10 );
+
+// Remove oEmbed discovery links.
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+
+// Remove oEmbed-specific JavaScript from the front-end and back-end.
+remove_action( 'wp_head', 'wp_oembed_add_host_js' );
+// Setting hình crop hình đại diện
+  function hk_get_thumb($id, $w, $h){
+  	if(get_post_thumbnail_id($id)){
+  		$url = wp_get_attachment_url( get_post_thumbnail_id($id));
+  	} else {
+  		$url = get_bloginfo('template_directory').'/no-thumb.jpg';
+  	}
+  	$image = huykira_image_resize($url, $w, $h, true, false);
+  	return $image['url'];
+  }
+  function hk_get_image($url, $w, $h){
+  	$image = huykira_image_resize($url, $w, $h, true, false);
+  	return $image['url'];
+  }

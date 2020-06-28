@@ -1222,6 +1222,12 @@ form.search-form button.search-submit {
   border-radius: 5px;
 }
 
+.contact .contact__contain .input__infomation .input__field--contain .input__field-item .notice__result-value {
+  color: var(--primary-color);
+  font-weight: 700;
+  opacity: 0;
+}
+
 .gallery__wrapper {
   display: grid;
   grid-gap: 20px;

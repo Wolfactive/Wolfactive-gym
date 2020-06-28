@@ -21,7 +21,8 @@
           </div>
         </div>
         <div class="slider__image-item">
-          <img src="<?php echo get_sub_field('background_image','option'); ?>" alt="background image">
+          <?php $urlImage=get_sub_field('background_image','option'); ?>
+          <img data-src="<?php echo hk_get_image($urlImage,1920,480)  ?>" alt="Background Image Slider">
         </div>
       </div>
     <?php endwhile;?>

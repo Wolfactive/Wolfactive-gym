@@ -16,7 +16,7 @@
         if($getValueSelectCategory === get_cat_ID('Class')){
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="class__item">
-             <div class="class__item-contain" data-aos="zoom-out-up" data-aos-offset="1000" data-aos-easing="ease-in-sine">
+             <div class="class__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
                <div class="class__image">
                  <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url('professorLandscape'); ?>" alt="Image"></a>
                </div>
@@ -33,7 +33,7 @@
       else{
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="blog__item">
-             <div class="blog__item-contain" data-aos="zoom-out-up" data-aos-offset="1000" data-aos-easing="ease-in-sine">
+             <div class="blog__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
                <div class="blog__image">
                  <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url('professorLandscape'); ?>" alt="Image"></a>
                </div>
