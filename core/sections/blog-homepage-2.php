@@ -6,6 +6,8 @@
     <div class="class__container">
       <ul class="class__background">
         <?php
+         $width=560;
+         $height=360;
          $getValueSelectCategory = get_field('hien_thi_blog_2','option');
          $args = array(
            'post_type' => 'post',
@@ -14,11 +16,12 @@
         );
         $the_query= new WP_Query($args);
         if($getValueSelectCategory === get_cat_ID('Class')){
-        while($the_query->have_posts()) : $the_query->the_post(); ?>
+        while($the_query->have_posts()) : $the_query->the_post();
+        ?>
            <li class="class__item">
              <div class="class__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
                <div class="class__image">
-                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url('professorLandscape'); ?>" alt="Image"></a>
+                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo hk_get_thumb(get_the_id(),$width,$height) ?>" alt="Image"></a>
                </div>
                <a href="<?php echo get_permalink(); ?>"><div class="bg-cover-color"></div></a>
                <div class="class__title-and-time">
@@ -31,11 +34,12 @@
         endwhile;
       }
       else{
-        while($the_query->have_posts()) : $the_query->the_post(); ?>
+        while($the_query->have_posts()) : $the_query->the_post();
+        ?>
            <li class="blog__item">
              <div class="blog__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
                <div class="blog__image">
-                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url('professorLandscape'); ?>" alt="Image"></a>
+                 <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo hk_get_thumb(get_the_id(),$width,$height)  ?>" alt="Image"></a>
                </div>
                  <div class="blog__tags">
                    <?php
