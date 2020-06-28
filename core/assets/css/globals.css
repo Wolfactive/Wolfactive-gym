@@ -23,37 +23,37 @@ Design by Canvilled.
 /*-----======Setup Color And Text======------*/
 /*-----=======Setup Font and main CSS======-----*/
 @font-face {
-  font-family: Ruda;
+  font-family: Markazi;
   font-weight: 400;
   src: url("../fonts/MarkaziText-Regular.ttf");
 }
 
 @font-face {
-  font-family: Ruda;
+  font-family: Markazi;
   font-weight: 600;
   src: url("../fonts/MarkaziText-Medium.ttf");
 }
 
 @font-face {
-  font-family: Ruda;
+  font-family: Markazi;
   font-weight: 700;
   src: url("../fonts/MarkaziText-Bold.ttf");
 }
 
 @font-face {
-  font-family: Markazi;
+  font-family: Ruda;
   src: url("../fonts/Ruda-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Markazi;
+  font-family: Ruda;
   src: url("../fonts/Ruda-Medium.ttf");
   font-weight: 600;
 }
 
 @font-face {
-  font-family: Markazi;
+  font-family: Ruda;
   src: url("../fonts/Ruda-Bold.ttf");
   font-weight: 900;
 }
@@ -74,7 +74,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   color: #333;
-  font-family: Markazi;
+  font-family: Ruda;
 }
 
 h1 {
@@ -950,7 +950,8 @@ section.class-gym {
 }
 
 .content {
-  font-family: ruda;
+  font-family: Markazi;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -1049,7 +1050,7 @@ section.class-gym {
 }
 
 .sidebar ul li a {
-  font-family: ruda;
+  font-family: Markazi;
   font-size: 18px;
 }
 
@@ -1204,7 +1205,7 @@ form.search-form button.search-submit {
 }
 
 .contact .contact__contain .input__infomation .input__field--contain .input__field-item label {
-  font-family: Ruda;
+  font-family: Markazi;
   font-size: 24px;
   font-weight: 700;
 }
