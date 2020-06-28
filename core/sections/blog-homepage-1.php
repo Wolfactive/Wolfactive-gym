@@ -32,7 +32,7 @@
       else{
         while($the_query->have_posts()) : $the_query->the_post(); ?>
            <li class="blog__item">
-             <div class="blog__item-contain" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+             <div class="blog__item-contain" data-aos="fade-right" data-aos-offset="1000" data-aos-easing="ease-in-sine">
                <div class="blog__image">
                  <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo the_post_thumbnail_url('professorLandscape'); ?>" alt="Image"></a>
                </div>
