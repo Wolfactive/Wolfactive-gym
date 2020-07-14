@@ -2,10 +2,13 @@
   color:var(--primary-color);
   font-weight: 700;
 }
+.title-search{
+  margin:50px 0;
+}
 .search__result-container{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(320px,450px));
-  grid-auto-rows: 360px;
+  grid-auto-rows: 300px;
   grid-gap: 20px;
   justify-content: center;
   .search__post-item{

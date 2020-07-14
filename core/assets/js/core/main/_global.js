@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
+    if (scroll >= 10) {
         $(".header__container").addClass("scrolling");
     } else {
         $(".header__container").removeClass("scrolling");

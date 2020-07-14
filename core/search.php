@@ -11,7 +11,7 @@ get_header();
 	<main id="primary" class="site-main">
 		<div class="search__wrapper" id="SearchPage">
 			<div class="search__content container">
-				<?php _e("<h2 style='font-weight:bold;color:#000'>Kết quả tìm kiếm cho: ".get_query_var('s')."</h2>"); ?>
+				<?php _e("<h2 style='font-weight:bold;color:#000' class='title-search'>Kết quả tìm kiếm cho: ".get_query_var('s')."</h2>"); ?>
 				<div class="search__background row-divide">
 					<div class="search__result col-divide-9 col-divide-sm-12">
 						<ul class="search__result-container">
