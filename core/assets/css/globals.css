@@ -1419,11 +1419,6 @@ form.search-form button.search-submit {
   animation: kenburns-bottom 3s ease-out both;
 }
 
-.blog__item-contain:hover .class__image img, .class__item-contain:hover .class__image img {
-  -webkit-animation: kenburns-bottom 3s ease-out both;
-  animation: kenburns-bottom 3s ease-out both;
-}
-
 .blog__item-contain:hover .bg-cover-color, .class__item-contain:hover .bg-cover-color {
   width: 100%;
   height: 100%;
