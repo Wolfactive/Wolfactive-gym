@@ -25,3 +25,18 @@
     }
   }
 }
+.create-by {
+    text-align: center;
+    padding-top: 30px;
+    position: relative;
+}
+.create-by:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 1px;
+    background: #dedede;
+}

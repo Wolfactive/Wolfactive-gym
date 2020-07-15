@@ -466,7 +466,7 @@ function get_post_homepage($getValueSelectCategory,$the_query,$width,$height)
   if($getValueSelectCategory === get_cat_ID('Class')){
   while($the_query->have_posts()) : $the_query->the_post(); ?>
      <li class="class__item">
-       <div class="class__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
+       <div class="class__item-contain" data-aos="zoom-out-up" data-aos-duration="1000">
          <div class="class__image">
            <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo hk_get_thumb(get_the_id(),$width,$height) ?>" alt="Image"></a>
          </div>
@@ -483,7 +483,7 @@ function get_post_homepage($getValueSelectCategory,$the_query,$width,$height)
 else{
   while($the_query->have_posts()) : $the_query->the_post(); ?>
      <li class="blog__item">
-       <div class="blog__item-contain" data-aos="zoom-out-up" data-aos-duration="2000">
+       <div class="blog__item-contain" data-aos="zoom-out-up" data-aos-duration="1000">
          <div class="blog__image">
            <a href="<?php echo get_permalink(); ?>"><img data-src="<?php echo hk_get_thumb(get_the_id(),$width,$height) ?>" alt="Image"></a>
          </div>

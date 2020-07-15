@@ -37,9 +37,13 @@
             ?>
           </div>
           <div class="copyright--content col-divide-6 col-divide-md-12">
-            <p class="copyright text--upcase text--center">All Right Reserved.</p></div>
+            <p class="copyright text--upcase text--center">All Right Reserved.</p>
           </div>
         </div>
+        <div class="create-by">
+          <p>© 2020, Built with Wolfactive Framework. All Right Reserved Wolfactive</p>
+        </div>
+      </div>
 	  </div>
 	    <!----------=========Sub==========-------->
  </section>

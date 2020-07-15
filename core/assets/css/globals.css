@@ -76,6 +76,7 @@ body {
   line-height: 1.5;
   color: #333;
   font-family: Ruda;
+  min-height: 100vh;
 }
 
 h1 {
@@ -1045,6 +1046,23 @@ section.class-gym {
   color: #000;
 }
 
+.create-by {
+  text-align: center;
+  padding-top: 30px;
+  position: relative;
+}
+
+.create-by:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 1px;
+  background: #dedede;
+}
+
 .sidebar .title--section {
   color: var(--primary-bg-color);
   font-weight: bold;
@@ -1397,8 +1415,8 @@ form.search-form button.search-submit {
 }
 
 .blog__item-contain:hover .blog__image img, .class__item-contain:hover .blog__image img {
-  -webkit-animation: kenburns-bottom 5s ease-out both;
-  animation: kenburns-bottom 5s ease-out both;
+  -webkit-animation: kenburns-bottom 3s ease-out both;
+  animation: kenburns-bottom 3s ease-out both;
 }
 
 .blog__item-contain:hover .bg-cover-color, .class__item-contain:hover .bg-cover-color {
@@ -1513,7 +1531,6 @@ form.search-form button.search-submit {
   grid-template-columns: repeat(auto-fit, minmax(320px, 450px));
   grid-auto-rows: 300px;
   grid-gap: 20px;
-  justify-content: center;
 }
 
 .search__result-container .search__post-item {
