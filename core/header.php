@@ -19,7 +19,6 @@
 </head>
 <body <?php body_class(); ?>>
 <section class="header">
-  <!-- nếu là homepage thì scroll đổi màu -->
   <?php if(is_front_page()){ ?>
   <div class="header__container main--background position--fixed">
     <div class="header__menu-wrapper container">

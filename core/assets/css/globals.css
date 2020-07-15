@@ -989,7 +989,7 @@ section.class-gym {
 }
 
 .header__container.scrolling {
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 .menu {
@@ -1276,11 +1276,17 @@ form.search-form button.search-submit {
 .gallery__wrapper .gallery__image-item {
   height: 100%;
   overflow: hidden;
+  transition: all .25s linear;
 }
 
 .gallery__wrapper .gallery__image-item img {
   height: 100%;
   width: auto;
+}
+
+.gallery__wrapper .gallery__image-item:hover {
+  box-shadow: 1px 1px 14px 2px #3333333d;
+  transform: translateY(-10px);
 }
 
 .gallery__image-item:nth-child(2n) {
