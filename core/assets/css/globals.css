@@ -966,6 +966,10 @@ section.class-gym {
   animation: kenburns-bottom 3s ease-out both;
 }
 
+#singlePost {
+  min-height: 100vh;
+}
+
 .logo__contain, .menu__contain {
   align-self: center;
 }
