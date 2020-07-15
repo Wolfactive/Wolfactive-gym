@@ -823,3 +823,11 @@ section.class-gym{
 .title__blog-home{
 	background:#fff;
 }
+.class__item-contain:hover{
+	.class__image{
+      img{
+        -webkit-animation: kenburns-bottom 3s ease-out both;
+  	        animation: kenburns-bottom 3s ease-out both;
+    }
+  }
+}

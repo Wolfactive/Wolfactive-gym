@@ -961,6 +961,11 @@ section.class-gym {
   background: #fff;
 }
 
+.class__item-contain:hover .class__image img {
+  -webkit-animation: kenburns-bottom 3s ease-out both;
+  animation: kenburns-bottom 3s ease-out both;
+}
+
 .logo__contain, .menu__contain {
   align-self: center;
 }
@@ -1410,18 +1415,23 @@ form.search-form button.search-submit {
   cursor: pointer;
 }
 
-.blog__item-contain:hover .blog__info, .blog__item-contain:hover .class__title-and-time, .class__item-contain:hover .blog__info, .class__item-contain:hover .class__title-and-time {
+.blog__item-contain:hover .blog__info, .blog__item-contain:hover .class__title-and-time {
   padding-bottom: 40px;
 }
 
-.blog__item-contain:hover .blog__image img, .class__item-contain:hover .blog__image img {
+.blog__item-contain:hover .blog__image img {
   -webkit-animation: kenburns-bottom 3s ease-out both;
   animation: kenburns-bottom 3s ease-out both;
 }
 
-.blog__item-contain:hover .bg-cover-color, .class__item-contain:hover .bg-cover-color {
+.blog__item-contain:hover .bg-cover-color {
   width: 100%;
   height: 100%;
+}
+
+.class__item-contain:hover .class__image a img {
+  -webkit-animation: kenburns-bottom 3s ease-out both;
+  animation: kenburns-bottom 3s ease-out both;
 }
 
 .slider__item:hover .slider__image-item img {
