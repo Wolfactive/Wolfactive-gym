@@ -11,6 +11,12 @@
     }
   }
 }
+.header__container{
+  transition: all .25s cubic-bezier(1,-.6,1,1.49);
+}
+.header__container.scrolling{
+  padding:20px 0;
+}
 .menu {
     display: flex;
     justify-content: space-around;

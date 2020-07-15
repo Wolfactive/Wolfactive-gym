@@ -55,14 +55,35 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll >= 10) {
+    if (scroll > 0) {
         $(".header__container").addClass("scrolling");
     } else {
         $(".header__container").removeClass("scrolling");
-
     }
 });
 window.onload = function(){ AOS.init();};
+
+$(function() {
+
+    var $sidebar   = $("#sidebar"),
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+      if($sidebar.length)
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding + 150
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 0
+            });
+        }
+    });
+
+});
 
 // var menuContain = document.getElementById('menu-main-menu');
 // var menuItem = menuContain.getElementByClassName('menu-item');

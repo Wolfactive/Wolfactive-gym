@@ -48,7 +48,7 @@ get_header();
 					 <?php endwhile ?>
 					 </ul>
 					</div>
-					<div class="sidebar__contain col-divide-3 col-divide-sm-12">
+					<div id="sidebar" class="sidebar__contain col-divide-3 col-divide-sm-12">
 	          <?php get_template_part('sections/sidebar') ?>
 	        </div>
 				</div>

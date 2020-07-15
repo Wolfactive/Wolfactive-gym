@@ -980,6 +980,14 @@ section.class-gym {
   }
 }
 
+.header__container {
+  transition: all 0.25s cubic-bezier(1, -0.6, 1, 1.49);
+}
+
+.header__container.scrolling {
+  padding: 20px 0;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -1547,6 +1555,10 @@ form.search-form button.search-submit {
   overflow: hidden;
 }
 
+.search__result-container .search__post-item .search__item-container {
+  height: 100%;
+}
+
 .search__result-container .search__post-item:hover .search__item-container .bg-cover-color {
   display: block;
 }
@@ -1557,7 +1569,7 @@ form.search-form button.search-submit {
 
 .search__result-container .search__item-container .bg-cover-color {
   position: absolute;
-  top: -6px;
+  top: 0;
   background-color: #000;
   opacity: 0.5;
   z-index: 0;
@@ -1592,7 +1604,7 @@ form.search-form button.search-submit {
   position: absolute;
   width: 100%;
   padding: 0 20px 20px 20px;
-  bottom: 6px;
+  bottom: 0;
   transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 10%, rgba(255, 255, 255, 0) 100%);
 }

@@ -34,7 +34,7 @@
        <?php }	}	?>
         </div>
        </div>
-       <div class="col-divide-3 col-divide-sm-12">
+       <div id="sidebar" class="col-divide-3 col-divide-sm-12">
          <?php get_template_part('sections/sidebar') ?>
        </div>
      </div>
