@@ -74,7 +74,7 @@ $(function() {
       if($sidebar.length)
         if ($window.scrollTop() > offset.top) {
             $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding + 175
+                marginTop: $window.scrollTop() - offset.top + topPadding + 125
             });
         } else {
             $sidebar.stop().animate({
