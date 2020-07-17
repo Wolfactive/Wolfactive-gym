@@ -68,7 +68,7 @@ $(function() {
     var $sidebar   = $("#sidebar"),
         $window    = $(window),
         offset     = $sidebar.offset(),
-        topPadding = 125;
+        topPadding = 210;
 
     $window.scroll(function() {
       if($sidebar.length)
