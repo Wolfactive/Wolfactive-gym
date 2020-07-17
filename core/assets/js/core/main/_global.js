@@ -68,13 +68,13 @@ $(function() {
     var $sidebar   = $("#sidebar"),
         $window    = $(window),
         offset     = $sidebar.offset(),
-        topPadding = 15;
+        topPadding = 125;
 
     $window.scroll(function() {
       if($sidebar.length)
         if ($window.scrollTop() > offset.top) {
             $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding + 150
+                marginTop: $window.scrollTop() - offset.top + topPadding
             });
         } else {
             $sidebar.stop().animate({
